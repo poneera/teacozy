@@ -1,0 +1,56 @@
+
+/* comment line  */
+
+head {
+	display: flex;
+	position: fixed;
+	height: 69px;
+	border-bottom: 1px solid seashell;
+
+}
+
+body {
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+
+
+
+.logo {
+	margin-left: 10px;
+	height: 50px;
+}
+
+nav {
+	text-decoration: underline;
+}
+
+nav span {
+	margin-right: 20px;
+	text-align: right;
+
+}
+
+.bigtea {
+	background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+	height: 700px;
+	width: 1200px;
+}
+
+.mission {
+	display: block;
+	text-align: center;
+}
+
+.teas {
+	display: flex;
+	max-height: 200px;
+	max-width: 300px;
+}
+
+.copyright {
+	margin-top: 100px;
+	text-align: left;
+}
