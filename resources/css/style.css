@@ -1,12 +1,21 @@
 
 /* comment line  */
 
-head {
-	display: flex;
+header {
+	
+
 	position: fixed;
 	height: 69px;
+	width: 100%;
 	border-bottom: 1px solid seashell;
 
+}
+
+/* Tea Cozy logo img */
+header img {
+	max-height: 50px;
+	margin-left: 10px;
+	
 }
 
 body {
@@ -15,42 +24,80 @@ body {
 	color: seashell;
 	background-color: black;
 	opacity: 0.9;
-
-
-
-.logo {
-	margin-left: 10px;
-	height: 50px;
-}
-
-nav {
-	text-decoration: underline;
-}
-
-nav span {
-	margin-right: 20px;
-	text-align: right;
-
-}
-
-.bigtea {
-	background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
-	height: 700px;
-	width: 1200px;
-}
-
-.mission {
-	display: block;
 	text-align: center;
 }
 
-.teas {
-	display: flex;
-	max-height: 200px;
-	max-width: 300px;
+nav {
+	text-align: right;
+	flex-grow: 1;  /* this line made it go right not sure why??? justify-content:flex-end did NOT work!!! */
 }
 
-.copyright {
-	margin-top: 100px;
+nav span {
+	padding-right: 20px;
+	text-decoration: underline;
+}
+
+#mission {
+	background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width:1200px;
+	height: 700px;
+	padding: 70px;
+}
+
+.content {
+	text-align: center;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+h2 h3 h4 {
+	margin: 0;
+	padding-right: 10px;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.item img {
+	height: 200px;
+	margin:10px;
+	display: block;
+}
+
+#store {
+	height: 700px;
+	width: 1000px;
+	margin: auto;
+	padding-top: 70px;
+}
+
+.location {
+	opacity: 1.0;
+	padding: 10px;
+	margin: 5px;
+	background-color: black;
+	flex-basis: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#locations {
+	background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+	height: 500px;
+	padding-top: 70px;
+}
+
+footer {
 	text-align: left;
 }
